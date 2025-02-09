@@ -74,12 +74,12 @@
 }
 
 .step > * {
-    width: 700px;
+    width: 550px;
     margin-left: 1.3em;
     margin-right: 1.3em;
     text-align: center;
     padding: 1.2em !important;
-    background-color: #ffa880cc;
+    background-color: #32E1B6;
 }
 
 .sticky-thing > canvas {

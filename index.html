@@ -13,12 +13,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <style>
+    
     body {
       margin: 0;
       font-size: 20px;
-      font-family: 'Aeonik', 'Times New Roman', Times, serif;
+      font-family: 'Aeonik TRIAL', sans-serif;
       text-rendering: optimizeLegibility;
+
     }
+
+    .with-image-bg,
+    .with-video-bg {
+            position: relative;
+            background-size: cover;
+        }
 
     .content {
       max-width: 640px;
@@ -27,10 +35,25 @@
 
     .header {
       padding: 3em 0;
+      background-color: black;
+      padding-bottom: 200px;
     }
 
+    .full-width-wrapper {
+    background-color: black;
+    width: 100%;
+}
+
+    h1{
+      color: white;
+      font-family: 'Aeonik TRIAL', sans-serif;
+      font-weight: bold;
+      font-size: 3em;
+      line-height: 1.1
+    }
+  
     a {
-      color: #f05349;
+      color: #00f5cc;
     }
 
     .footer {
@@ -53,12 +76,12 @@
       color: #666;
     }
 
-    h1 {
-      font-family: 'Lora', Georgia, serif;
-      font-weight: bold;
-      font-size: 3em;
-      line-height: 1.1;
+    h2 {
+      color: white;
+      font-family: 'Aeonik TRIAL', sans-serif;
+
     }
+
 
     .subhead {
       font-family: 'Lora', Georgia, serif;
@@ -74,6 +97,11 @@
       line-height: 1.6;
       margin: 0;
       padding-bottom: 1.2em;
+      color: #CAD0D3
+    }
+    
+    .in_box{
+      color: white
     }
 
     ul {
@@ -94,6 +122,20 @@
     .full-width figure {
       text-align: center;
     }
+    .video-background {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 2px;
+            z-index: -1;
+        }
+
+        .video-background video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
 
     /* margin on mobile */
     @media (max-width: 640px) {
@@ -114,79 +156,107 @@
 </head>
 
 <body>
-  <div class="content">
-    <div class="header">
-      <h1>Bach to Impacts: The Creative Minds Marked on Mercury </h1>
-      <p class="subhead">Here is the subhead or additional content you want to add in</p>
+
+  <div class="header with-video-bg">
+    <div class="video-background">
+        <video src="intro_video.mp4" preload="auto" tabindex="0" playsinline autoplay loop muted></video>
     </div>
-    <div class="byline">
-      <p>By <a href="https://chilinhhovo.github.io/portfolio/">Chi Vo</a></p>
-    </div>
-    <p> When astronomers map the surface of Mercury, they don’t just see craters formed by ancient collisions; they see a reflection of humanity’s artistic and literary heritage. Unlike the Moon, where craters are named after scientists and explorers, Mercury’s craters honor writers, artists, and composers. This naming convention, set by the International Astronomical Union (IAU), immortalizes creative minds in the very landscape of another world.
-        There are currently 414 named craters on Mercury, each assigned to a historical figure who has left a significant cultural impact. The selection process is specific: honorees must be deceased for at least three years and must have been recognized for over 50 years for their contributions to the arts. These craters serve as a celestial tribute, a reminder that human creativity resonates far beyond Earth. But a closer look at the names reveals deeper patterns—who is honored, which artistic fields are most represented, and how cultural power structures have shaped this cosmic hall of fame.</p>
-    <p>You can change the fonts by using <a href="https://fonts.google.com/">Google Fonts</a> and some CSS. Right now
-      we're using Lora for headlines and Georgia for body copy.</a></p>
-    <p>You will need <code><a href="scrolly-styles.css">scrolly-styles.css</a></code> for the page to work for you.</p>
   </div>
-  <section id="scrolly-video" class="scrolly-container">
-    <div class="sticky-thing">
-    </div>
-    <div class="steps-container">
-      <div class="step" id="step-first">
-        <p>You will have to use VS Code's <strong>Live Server</strong> extension to do this locally. Once you've
-          installed it, right-click the filename on the left-panel and select "Open with Live Server".</p>
-      </div>
-      <div class="step" id="step-second">
-        <p>To find more details about how this is done, check out <a
-            href="https://github.com/dkaoster/scrolly-video">scrolly-video</a>.</p>
-      </div>
-      <div class="step" id="step-third">
-        <p>Step three.</p>
-      </div>
-      <div class="step" id="step-fourth">
-        <p>Step four.</p>
-      </div>
-      <div class="step" id="step-fifth">
-        <p>Step five.</p>
-      </div>
-    </div>
-  </section>
-  <div class="content">
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-      ratione voluptatem sequi nesciunt.</p>
-    <figure>
-      <img
-        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-      <figcaption>This is an image caption</figcaption>
-    </figure>
-    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-      numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-      veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-    </p>
-  </div>
-  <div class="full-width">
-    <figure>
-      <img
-        src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-      <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
-    </figure>
-  </div>
-  <div class="content">
-    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-      qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-      cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-      repellendus.</p>
-  </div>
-  <div class="footer">
+
+  <div class="full-width-wrapper">
     <div class="content">
-      <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>. Delete
-        these lines
-        when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+      <div class="header">
+        <h1>Bach to Impacts: The Creative Minds Marked on Mercury </h1>
+        <p class="subhead">Here is the subhead or additional content you want to add in</p>
+      </div>
+      <div class="byline">
+        <p>By <a href="https://chilinhhovo.github.io/portfolio/">Chi Vo</a></p>
+      </div>
+      <p> When astronomers map the surface of Mercury, they don’t just see craters formed by ancient collisions; they see a reflection of humanity’s artistic and literary heritage. Unlike the Moon, where craters are named after scientists and explorers, Mercury’s craters honor writers, artists, and composers. This naming convention, set by the International Astronomical Union (IAU), immortalizes creative minds in the very landscape of another world.
+        
+      There are currently 424 named craters on Mercury, each assigned to a historical figure who has left a significant cultural impact. The selection process is specific: honorees must be deceased for at least three years and must have been recognized for over 50 years for their contributions to the arts. These craters serve as a celestial tribute, a reminder that human creativity resonates far beyond Earth. But a closer look at the names reveals deeper patterns—who is honored, which artistic fields are most represented, and how cultural power structures have shaped this cosmic hall of fame.</p>
+    
+
+      <p>You can change explore NASA page on Mercury here <a href="https://science.nasa.gov/mercury/facts/">NASA</a> and some CSS. Right now
+        we're using Lora for headlines and Georgia for body copy.</a></p>
+      <p>You will need <code><a href="scrolly-styles.css">scrolly-styles.css</a></code> for the page to work for you.</p>
     </div>
+    <section id="scrolly-video" class="scrolly-container">
+      <div class="sticky-thing">
+      </div>
+      <div class="steps-container">
+        <div class="step" id="step-first">
+          <p class="in_box">Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.</p>
+        </div>
+        <div class="step" id="step-second">
+          <p class="in_box">TMercury is only slightly larger than Earth’s Moon. It’s the fastest planet, zipping around the Sun every 88 Earth days. Mercury is named for the swiftest of the ancient Roman gods. <a
+              href="https://github.com/dkaoster/scrolly-video">scrolly-video</a>.</p>
+        </div>
+        <div class="step" id="step-third">
+          <p class="in_box">Mercury is a rocky planet, also known as a terrestrial planet. Mercury has a solid, cratered surface, much like the Earth's moon. Mercury’s surface resembles that of Earth’s Moon, scarred by many impact craters resulting from collisions with meteoroids and comets. Craters and features on Mercury are named after famous deceased artists, musicians, or authors, including children’s author Dr. Seuss and dance pioneer Alvin Ailey.
+            
+          Very large impact basins, including Caloris (960 miles or 1,550 kilometers in diameter) and Rachmaninoff (190 miles, or 306 kilometers in diameter), were created by asteroid impacts on the planet’s surface early in the solar system’s history. While there are large areas of smooth terrain, there are also cliffs, some hundreds of miles long and soaring up to a mile high. They rose as the planet’s interior cooled and contracted over the billions of years since Mercury formed.
+          
+          Most of Mercury’s surface would appear greyish-brown to the human eye. The bright streaks are called “crater rays.” They are formed when an asteroid or comet strikes the surface. The tremendous amount of energy that is released in such an impact digs a big hole in the ground, and also crushes a huge amount of rock under the point of impact. Some of this crushed material is thrown far from the crater and then falls to the surface, forming the rays. Fine particles of crushed rock are more reflective than large pieces, so the rays look brighter. The space environment – dust impacts and solar-wind particles – causes the rays to darken with time.</p>
+        </div>
+        <div class="step" id="step-fourth">
+          <p class="in_box">Impact craters on Mercury helped scientists solve a long-standing mystery. Mercury’s surface is unusually dark—and until flyovers by the MESSENGER probe, no one knew why. Infrared spectrometry showed dark, carbon-rich rock in and around impact craters. The impacts had blown away the younger surface rocks, revealing Mercury’s original crust: a layer of graphite that floated on the planet’s early magma ocean.</p>
+        </div>
+        <div class="step" id="step-fifth">
+          <p class="in_box">Craters on Mercury are named after artists because the International Astronomical Union (IAU) decided to honor significant contributors to the humanities by naming the planet's craters after famous writers, artists, and composers, signifying their lasting impact on culture, similar to how they "left their mark" on the planet's surface</p>
+        </div>
+        <p> Video source <a href="https://svs.gsfc.nasa.gov/14110/">NASA's MESSENGER spacecraft</a> </p>
+      </div>
+    </section>
+    <div class="content">
+
+      <h2> The Gender Imbalance in Artistic Legacy </h2>
+      <p>A striking observation emerges from the data: Mercury’s artistic pantheon is overwhelmingly male. For every woman honored with a crater name, there are five men. This stark gender imbalance reflects a long history of exclusion in the arts. For centuries, societal norms and institutional barriers limited women’s access to artistic education, publishing opportunities, and high-profile commissions. Even in recent decades, many women’s contributions have remained underappreciated compared to their male counterparts.
+
+        While the overall representation remains lopsided, there has been a shift in recent years. More women have been added to Mercury’s surface, including literary and artistic figures such as Maya Angelou, Artemisia Gentileschi, and Audre Lorde. These newer additions signal a growing recognition of women’s impact on artistic and literary history, though they remain vastly outnumbered.
+        
+        </p>
+
+    </div>
+      <figure>
+        <img
+          src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+        <figcaption>This is an image caption</figcaption>
+      </figure>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+        numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+    </div>
+    <div class="full-width">
+      <figure>
+        <img
+          src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
+        <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
+      </figure>
+    </div>
+  </div>
+    <div class="content">
+      <h2> The Gender Imbalance in Artistic Legacy </h2>
+      <p>A striking observation emerges from the data: Mercury’s artistic pantheon is overwhelmingly male. For every woman honored with a crater name, there are five men. This stark gender imbalance reflects a long history of exclusion in the arts. For centuries, societal norms and institutional barriers limited women’s access to artistic education, publishing opportunities, and high-profile commissions. Even in recent decades, many women’s contributions have remained underappreciated compared to their male counterparts.
+
+        While the overall representation remains lopsided, there has been a shift in recent years. More women have been added to Mercury’s surface, including literary and artistic figures such as Maya Angelou, Artemisia Gentileschi, and Audre Lorde. These newer additions signal a growing recognition of women’s impact on artistic and literary history, though they remain vastly outnumbered.
+        
+        </p>
+
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+        corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+        cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+        repellendus.</p>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>. Delete
+          these lines
+          when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+      </div>
   </div>
 
   <script>
@@ -207,9 +277,9 @@
     */
     new ScrollyVideo({
       scrollyVideoContainer: document.querySelector("#scrolly-video .sticky-thing"),
-      src: "HANYU_desktop.mp4",
+      src: "HANYU_desktop_1.mp4",
       full: true,
-      // cover: true
+      cover: true
     });
   </script>
   <style>
