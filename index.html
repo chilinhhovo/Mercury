@@ -35,9 +35,9 @@
 
     .header {
       position: relative;
-      height: 100vh; /* Full viewport height */
-      padding: 0; /* Remove padding that might affect video positioning */
-      overflow: hidden; /* Prevent video overflow */
+      height: 100vh; 
+      padding: 0; 
+      overflow: hidden; 
     }
 
     .full-width-wrapper {
@@ -130,23 +130,22 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 0; /* Place behind content */
+      z-index: 0; 
     }
 
     .video-background video {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Ensure video covers entire container */
+      object-fit: cover; 
     }
 
     .header-content {
       position: relative;
-      z-index: 1; /* Place above video */
+      z-index: 1; 
       padding: 3em;
       color: white;
     }
 
-    /* Ensure text is visible over video */
     .header h1,
     .header .subhead {
       position: relative;
@@ -173,9 +172,11 @@
 
 <body>
 
-  <div class="header with-video-bg">
+  <div class="header">
     <div class="video-background">
-        <video src="intro_video.mp4" preload="auto" tabindex="0" playsinline autoplay loop muted></video>
+      <video autoplay loop muted playsinline>
+        <source src="intro_video.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
