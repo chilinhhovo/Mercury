@@ -80,6 +80,8 @@
     text-align: center;
     padding: 1.2em !important;
     background-color: #32E1B6;
+    opacity: 70%;
+    border-radius: 10px;
 }
 
 .sticky-thing > canvas {

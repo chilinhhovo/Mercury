@@ -34,9 +34,10 @@
     }
 
     .header {
-      padding: 3em 0;
-      background-color: black;
-      padding-bottom: 200px;
+      position: relative;
+      height: 100vh; /* Full viewport height */
+      padding: 0; /* Remove padding that might affect video positioning */
+      overflow: hidden; /* Prevent video overflow */
     }
 
     .full-width-wrapper {
@@ -122,20 +123,35 @@
     .full-width figure {
       text-align: center;
     }
-    .video-background {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            padding-bottom: 2px;
-            z-index: -1;
-        }
 
-        .video-background video {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0; /* Place behind content */
+    }
+
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure video covers entire container */
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1; /* Place above video */
+      padding: 3em;
+      color: white;
+    }
+
+    /* Ensure text is visible over video */
+    .header h1,
+    .header .subhead {
+      position: relative;
+      z-index: 1;
+    }
 
     /* margin on mobile */
     @media (max-width: 640px) {
@@ -219,7 +235,7 @@
       </figure>
       </p>
 
-      <h2> Why Poets Leave the Deepest Impact</h2>
+      <h2> Masters of words left the highest number of impacts on Mercury </h2>
       <figure> 
         <img alt ="A horizontal bar chart showing the distribution of professions among cultural figures with craters named after them on Mercury. Poets (83), painters (67), and writers (58) are the most represented, while professions like astronomer, pianist, and philosopher have only one each." src = "data/famous_for/famous_for.png">
       </figure>
@@ -230,6 +246,9 @@
           Additionally, poetry has a unique ability to transcend time and geography. While paintings and compositions require a level of cultural context for appreciation, poetry—especially in translation—carries its meaning more fluidly across different eras and societies. This may explain why figures like Rumi, Shakespeare, and Pablo Neruda continue to hold influence centuries after their lifetimes.</p>
 
     </div>
+
+
+
       <figure>
         <img
           src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
