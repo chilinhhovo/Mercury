@@ -9,8 +9,8 @@ To see which continent has the most icons named on Mercury
 Charts and a write up of my findings 
 
 # Tech stack used:
-Python — BeautifulSoup and Pandas
-Regex
+- Python — BeautifulSoup and Pandas
+- Regex
 HTML + CSS 
 Google Sheets - pivot table 
 Illustrator 
