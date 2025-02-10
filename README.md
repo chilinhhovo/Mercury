@@ -4,6 +4,7 @@ View project here: https://chilinhhovo.github.io/Mercury/
 
 # Goal 
 To see which continent has the most icons named on Mercury 
+Furthermore, I wanted to try things that would not be approved timesheet wise in a newsroom or my previous workplaces 
 
 # Final output 
 Charts and a write up of my findings 
