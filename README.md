@@ -20,7 +20,7 @@ Charts and a write up of my findings
 1. Found the list of crater names via Wikipedia, scraped Wikipedia for names https://en.wikipedia.org/wiki/List_of_craters_on_Mercury (code in notebook Scraping Wikipedia.ipynb) 
 3. Scraped NASA links https://planetarynames.wr.usgs.gov/SearchResults?Target=14_Mercury&Feature%20Type=9_Crater,%20craters (code in notebook Scraping US site for ethnicity.ipynb) 
 4. All data saved to (Ethnicity_Data.csv) 
-5. Used Google Sheets to analyzed the data https://docs.google.com/spreadsheets/d/1zfwp9k8m24LGGS6zyZNjCFcMJ4KtZxq25E9qwja8F8E/edit?usp=sharing
+5. Used Google Sheets to analyzed the data. This includes manually going over the sheet to define country's continent and figures' gender.  https://docs.google.com/spreadsheets/d/1zfwp9k8m24LGGS6zyZNjCFcMJ4KtZxq25E9qwja8F8E/edit?usp=sharing
 6. Used DataWrapper to make chart
 7. Used Flourish to make treemap and traced over using Illustrator to achieve the colour paletted I wanted (all charts are in Data Studio (Mercury).ai) 
 8. Created hero image using Photoshop (hero_image_mercury.psd)
@@ -38,3 +38,6 @@ Charts and a write up of my findings
 
 # Things that are not working
 - Video is not playing when published on Github, only on local host
+
+# Lesson learned: 
+- Do not use Illustrator to make charts, only to annotate and small tweaks. Tracing takes a long long time. 
