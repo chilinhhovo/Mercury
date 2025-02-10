@@ -11,10 +11,10 @@ Charts and a write up of my findings
 # Tech stack used:
 - Python — BeautifulSoup and Pandas
 - Regex
-HTML + CSS 
-Google Sheets - pivot table 
-Illustrator 
-Photoshop
+- HTML + CSS 
+- Google Sheets - pivot table 
+- Illustrator 
+- Photoshop
 
 # Process summary
 1. Found the list of crater names via Wikipedia, scraped Wikipedia for names https://en.wikipedia.org/wiki/List_of_craters_on_Mercury (code in notebook Scraping Wikipedia.ipynb) 
@@ -35,3 +35,6 @@ Photoshop
 6. Gender Imbalance – For every woman honored, five men receive recognition, highlighting historical artistic exclusion. However, recent additions like Maya Angelou and Audre Lorde show progress.
 7. Poetry Leads the List – More craters are named after poets than any other profession, showcasing poetry’s historical significance in storytelling and cultural preservation
 8. Mercury as a Cultural Archive – The crater names provide insight into artistic history, gender disparities, and shifting cultural influences, immortalizing creativity in space.
+
+# Things that are not working
+- Video is not playing when published on Github, only on local host
