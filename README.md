@@ -19,13 +19,14 @@ Charts and a write up of my findings
 
 # Process summary
 1. Found the list of crater names via Wikipedia, scraped Wikipedia for names https://en.wikipedia.org/wiki/List_of_craters_on_Mercury (code in notebook Scraping Wikipedia.ipynb) 
-3. Scraped NASA links https://planetarynames.wr.usgs.gov/SearchResults?Target=14_Mercury&Feature%20Type=9_Crater,%20craters (code in notebook Scraping US site for ethnicity.ipynb) 
-4. All data saved to (Ethnicity_Data.csv) 
-5. Used Google Sheets to analyzed the data. This includes manually going over the sheet to define country's continent and figures' gender.  https://docs.google.com/spreadsheets/d/1zfwp9k8m24LGGS6zyZNjCFcMJ4KtZxq25E9qwja8F8E/edit?usp=sharing
-6. Used DataWrapper to make chart
-7. Used Flourish to make treemap and traced over using Illustrator to achieve the colour paletted I wanted (all charts are in Data Studio (Mercury).ai) 
-8. Created hero image using Photoshop (hero_image_mercury.psd)
-9. Write up
+3. Scraped NASA links https://planetarynames.wr.usgs.gov/SearchResults?Target=14_Mercury&Feature%20Type=9_Crater,%20craters (code in notebook Scraping US site for ethnicity.ipynb)
+4. All links andn names saved to (Ethnicity_Data.csv)
+5. All other saved data such as human names, gender, continent, ethnicity, crater's name, diameter, year named, etc saved to (all_data.csv) 
+6. Used Google Sheets to analyzed the data. This includes manually going over the sheet to define country's continent and figures' gender.  https://docs.google.com/spreadsheets/d/1zfwp9k8m24LGGS6zyZNjCFcMJ4KtZxq25E9qwja8F8E/edit?usp=sharing
+7. Used DataWrapper to make chart
+8. Used Flourish to make treemap and traced over using Illustrator to achieve the colour paletted I wanted (all charts are in Data Studio (Mercury).ai) 
+9. Created hero image using Photoshop (hero_image_mercury.psd)
+10. Write up
 
 # Result 
 1. Mercury’s Named Craters – The craters on Mercury are named after the most prolific literary and artistic figures in human history, rule set by International Astronomical Union’s (IAU).
