@@ -38,8 +38,6 @@ Charts and a write up of my findings
 7. Poetry Leads the List – More craters are named after poets than any other profession, showcasing poetry’s historical significance in storytelling and cultural preservation
 8. Mercury as a Cultural Archive – The crater names provide insight into artistic history, gender disparities, and shifting cultural influences, immortalizing creativity in space.
 
-# Things that are not working
-- Video is not playing when published on Github, only on local host
-
 # Lesson learned: 
-- Do not use Illustrator to make charts, only to annotate and small tweaks. Tracing takes a long long time. 
+- Do not use Illustrator to make charts, only to annotate and small tweaks. Tracing takes a long long time.
+- Do not upload files bigger than 100MB because everything would be moved to git lfs and it'd build strange links to store files at random places and not get uploaded onto the github repo. A huge  thank you to Jonathan Soma who fixed this. 
